@@ -1,0 +1,123 @@
+/* login.css */
+
+/* General styling for the body */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+  background: url("https://static.vecteezy.com/system/resources/thumbnails/037/980/962/small_2x/ai-generated-serene-of-lone-tree-standing-partially-submerged-in-calm-body-of-water-with-the-gradient-hues-of-sunset-or-sunrise-reflecting-on-the-water-surface-ai-generated-photo.jpg")
+    no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Center the form container */
+form {
+  width: 100%;
+  max-width: 400px;
+  margin: 100px auto;
+  background: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Form header */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-size: 1.8em;
+  font-family: "Georgia", serif;
+  font-weight: bold;
+}
+
+.title h1{
+  color: #ffffff;
+}
+.title h2{
+  color: #ffffff;
+}
+
+/* Styling for input fields */
+input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+/* Input focus effect */
+input:focus {
+  border-color: #ff8c00;
+  outline: none;
+  box-shadow: 0px 0px 5px #ff8c00;
+}
+
+/* Submit button styling */
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff8c00; /* Calm orange color */
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #e67e00; /* Slightly darker on hover */
+}
+
+/* Link styling */
+p {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #000000;
+}
+
+p a {
+  color: #5a17b9;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  form {
+    margin: 50px auto;
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 1.5em;
+    color: #ffffff;
+  }
+
+  input {
+    padding: 8px;
+  }
+
+  button {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  p {
+    font-size: 13px;
+  }
+}

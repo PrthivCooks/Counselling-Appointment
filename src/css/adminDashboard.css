@@ -1,0 +1,329 @@
+/* General Dashboard Styles */
+body {
+  font-family: "Arial", sans-serif;
+  background-image: url('https://www.pixel4k.com/wp-content/uploads/2018/03/Calm%20Sunset%204K576369082.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 50%;
+  text-align: center;
+  position: relative;
+}
+
+.close-modal {
+  position: absolute;
+  top: -20px; /* Adjust to center the button */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 18px;
+  background-color: orange;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 10px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.close-modal:hover {
+  background-color: #e69500;
+}
+
+.slot-details p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.slot-details textarea {
+  width: 80%;
+  height: 60px;
+  margin: 10px 0;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.slot-details button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.slot-details button:first-of-type {
+  background-color: orange;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.slot-details button:first-of-type:hover {
+  background-color: #e69500;
+}
+
+.slot-details button:last-of-type {
+  background-color: red;
+  color: white;
+}
+
+.slot-details button:last-of-type:hover {
+  background-color: darkred;
+}
+
+/* Main Container */
+h1 {
+  text-align: center;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.title1 {
+  color: #fff;
+}
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+th {
+  background: #4caf50;
+  color: white;
+}
+
+td {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+td button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #007bff;
+  text-decoration: underline;
+  font-size: 12px;
+}
+
+td button:hover {
+  color: #0056b3;
+}
+
+/* Status Colors */
+td[style*="red"] {
+  font-weight: bold;
+  color: red !important;
+}
+
+td[style*="gray"] {
+  font-weight: bold;
+  color: gray !important;
+}
+
+td[style*="green"] {
+  font-weight: bold;
+  color: green !important;
+}
+
+/* Slot Details Section */
+.slot-details {
+  margin: 20px auto;
+  padding: 20px;
+  width: 80%;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+.slot-details h2 {
+  color: #4caf50;
+  text-align: center;
+}
+
+.slot-details p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.slot-details strong {
+  color: #333;
+}
+
+.slot-details button {
+  display: block;
+  margin: 20px auto 0;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.slot-details button:hover {
+  background-color: #45a049;
+}
+
+.slot-details .blocked-btn {
+  background-color: #f44336;
+}
+
+.slot-details .blocked-btn:hover {
+  background-color: #d32f2f;
+}
+
+.title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px; /* Adjust size for better visibility */
+  font-weight: 600; /* Semi-bold weight */
+  color: #333; /* Neutral color for text */
+  text-align: center; /* Center align the title */
+  margin: 20px 0; /* Add some spacing around the title */
+}
+/* Buttons for marking holidays */
+th button {
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 4px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+th button:hover {
+  background-color: #45a049;
+}
+
+th button.unmark-btn {
+  background-color: #f44336;
+}
+
+th button.unmark-btn:hover {
+  background-color: #d32f2f;
+}
+
+.admin-dashboard {
+  padding: 20px;
+}
+
+.title1 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.download-btn {
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.appointment-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.appointment-table th,
+.appointment-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.booked {
+  background-color: #ffcccc;
+  color: red;
+  cursor: pointer;
+}
+
+.blocked {
+  background-color: #e0e0e0;
+  color: grey;
+  cursor: pointer;
+}
+
+.free {
+  background-color: #ccffcc;
+  color: green;
+  cursor: pointer;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 50%;
+  text-align: center;
+}
+
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: red;
+}
+
+.custom-alert {
+  position: fixed;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ffffff;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 8px;
+  z-index: 1000;
+  text-align: center;
+}
+
